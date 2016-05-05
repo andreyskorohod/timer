@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$bgd-color: #000;
+$link-color: #fff;
+
+a{
+  color: $link-color !important;
+  text-decoration: none;
+}
+
+body{
+  background-color: $bgd-color !important;
+}
+
+header {
+  ul{
+    list-style: none;
+  }
+}
+
+main{
+}
