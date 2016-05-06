@@ -4,6 +4,9 @@
 }
 $bgd-color: #000;
 $link-color: #fff;
+$timer-color: red;
+$results-color: rgb(102, 102, 102);
+
 
 a{
   color: $link-color !important;
@@ -21,4 +24,26 @@ header {
 }
 
 main{
+  height: 100vh;
+  .timer{
+    padding-top: 200px;
+    text-align: center;
+    span{
+      color: $timer-color;
+      font-family: Helvetica;
+      font-size: 84px;
+    }
+    .buttons{
+      margin-left: -10px;
+      #split, #reset{
+        margin-left: 5px;
+      }
+    }
+  }
+  .results{
+    padding-top: 20px;
+    color: $results-color;
+    text-align: center;
+    font-size: 40px;
+  }
 }

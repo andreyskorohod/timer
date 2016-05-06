@@ -1,41 +1,53 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link href="../css/styles.css" rel="stylesheet">
+        <script src="../js/jquery-2.2.3.min.js"></script>
+        <script src="../js/timer.js"></script>
         <link rel='stylesheet' href='../css/bootstrap/css/bootstrap.min.css' type='text/css' media='all'>
         <title>Timer</title>
     </head>
 
     <body>
         <header>
-            <div class="container">
-                <div class="row">
-                    <div class="nav col-xs-12">
-                        <ul class="navigation-left col-xs-6">
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                        </ul>
-                        <ul class="navigation-right col-xs-6">
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                            <li class="col-xs-1"><a href="/">1</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="nav col-xs-12">-->
+                        <!--<ul class="navigation-left col-xs-6">-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                        <!--</ul>-->
+                        <!--<ul class="navigation-right col-xs-6">-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                            <!--<li class="col-xs-1"><a href="/">1</a></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </header>
 
         <main>
-
+            <div class="container">
+                <div class="row">
+                    <div class="timer">
+                        <span class="col-xs-12">00:00:00.000</span>
+                        <div class="buttons">
+                            <button id="start" class="col-xs-offset-3 col-xs-2 btn">start</button>
+                            <button id="split" class="col-xs-2 btn">split</button>
+                            <button id="reset" class="col-xs-2 btn">reset</button>
+                        </div>
+                    </div>
+                    <div class="results col-xs-12"></div>
+                </div>
+            </div>
         </main>
 
         <footer>

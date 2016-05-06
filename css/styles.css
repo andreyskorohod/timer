@@ -12,4 +12,23 @@ body {
 header ul {
   list-style: none; }
 
+main {
+  height: 100vh; }
+  main .timer {
+    padding-top: 200px;
+    text-align: center; }
+    main .timer span {
+      color: red;
+      font-family: Helvetica;
+      font-size: 84px; }
+    main .timer .buttons {
+      margin-left: -10px; }
+      main .timer .buttons #split, main .timer .buttons #reset {
+        margin-left: 5px; }
+  main .results {
+    padding-top: 20px;
+    color: #666666;
+    text-align: center;
+    font-size: 40px; }
+
 /*# sourceMappingURL=styles.css.map */
