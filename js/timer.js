@@ -80,10 +80,11 @@ function formattedTime(time){
     seconds = seconds < 10 ? '0' + seconds : seconds;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     if (milliseconds < 100) {
-        if (milliseconds >= 10) milliseconds = "0" + milliseconds;
-        else milliseconds = "00" + milliseconds;
+        if (milliseconds >= 10) milliseconds = '0' + milliseconds;
+        else milliseconds = '0' + '0' + milliseconds;
     }
-    return "0" + hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+    if (hours < 10) hours = "0" + hours;
+    return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
 }
 
 function showResults(count) {
