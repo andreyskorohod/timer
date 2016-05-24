@@ -7,7 +7,6 @@ $link-color: #fff;
 $timer-color: red;
 $results-color: rgb(102, 102, 102);
 
-
 a{
   color: $link-color !important;
   text-decoration: none;
@@ -30,7 +29,8 @@ main{
     text-align: center;
     span{
       color: $timer-color;
-      font-family: Helvetica;
+      font-family: Arial, Helvetica, sans-serif monospace;
+      
       font-size: 84px;
     }
     .buttons{
